@@ -1,0 +1,105 @@
+enum Status{
+	NEW,
+    ASSIGNED,
+    IN_PROGRESS,
+    SUSPENDED,
+    CLOSED
+}
+
+enum Priority{
+	CRITICAL,
+    HIGH,
+    MEDIUM,
+    LOW
+}
+
+enum Role{
+	USER,
+    ADMIN
+}
+
+enum WorklogSource{
+	SYSTEM,
+    USER,
+    EMAIL
+}
+
+entity Incident{
+	id Long required,
+    status Status required,
+    priority Priority required,
+    description String,
+    createdAt Long required,
+    updatedAt Long required,
+    closedAt Long
+    }
+
+entity Group{
+	id Long required,
+    name String required,
+    email String required
+}
+
+entity IncidentWorklog{
+	id Long required,
+    notes String required,
+    createdAt Long required,
+    source WorklogSource required
+}
+
+entity Employee{
+	id Long required,
+    username String ,
+    passwordHash String,
+    role Role
+}
+
+entity Person{
+	id Long required,
+    firstName String required,
+    lastName String required,
+    email String required,
+    phone String
+}
+
+entity Customer{
+	id Long required,
+    company String required,
+    address String
+}
+
+
+relationship OneToMany{
+	Incident{incidentWorklog} to IncidentWorklog{incident}
+}
+
+
+relationship OneToMany{
+	Person{submittedWorklogs} to IncidentWorklog{submittedBy}
+}
+
+relationship OneToOne{
+	Employee{personId} to Person
+}
+
+relationship OneToOne{
+	Customer{personId} to Person
+}
+
+relationship ManyToMany{
+	Employee{group} to Group{groupPermission}
+}
+
+relationship OneToMany{
+	Employee{ownedIncidents} to Incident{ownerId}
+}
+
+
+relationship OneToMany{
+	Employee{submittedIncidents} to Incident{submittedById}
+
+}
+
+relationship ManyToOne{
+	Incident{group} to Group
+}
