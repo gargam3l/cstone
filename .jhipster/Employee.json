@@ -1,0 +1,59 @@
+{
+    "name": "Employee",
+    "fields": [
+        {
+            "fieldName": "username",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "passwordHash",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "role",
+            "fieldType": "Role",
+            "fieldValues": "USER,ADMIN"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "person",
+            "otherEntityRelationshipName": "employee",
+            "relationshipName": "personId",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "incident",
+            "otherEntityRelationshipName": "ownerId",
+            "relationshipName": "ownedIncidents"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "incident",
+            "otherEntityRelationshipName": "submittedById",
+            "relationshipName": "submittedIncidents"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "group",
+            "otherEntityRelationshipName": "groupPermission",
+            "relationshipName": "group",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200515161300",
+    "entityTableName": "employee",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

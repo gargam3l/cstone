@@ -1,0 +1,26 @@
+{
+  "cstoneApp": {
+    "incidentWorklog": {
+      "home": {
+        "title": "IncidentWorklogs",
+        "createLabel": "Egy új Incident Worklog létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Incident Worklogt",
+        "notFound": "No Incident Worklogs found"
+      },
+      "created": "Egy új Incident Worklog lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Incident Worklog módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Incident Worklog törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Incident Worklogt {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Incident Worklog"
+      },
+      "notes": "Notes",
+      "createdAt": "Created At",
+      "source": "Source",
+      "incident": "Incident",
+      "submittedBy": "Submitted By"
+    }
+  }
+}

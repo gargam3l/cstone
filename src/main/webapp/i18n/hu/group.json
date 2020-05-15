@@ -1,0 +1,24 @@
+{
+  "cstoneApp": {
+    "group": {
+      "home": {
+        "title": "Groups",
+        "createLabel": "Egy új Group létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Groupt",
+        "notFound": "No Groups found"
+      },
+      "created": "Egy új Group lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Group módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Group törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Groupt {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Group"
+      },
+      "name": "Name",
+      "email": "Email",
+      "groupPermission": "Group Permission"
+    }
+  }
+}

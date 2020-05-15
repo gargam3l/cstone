@@ -1,0 +1,10 @@
+{
+  "cstoneApp": {
+    "WorklogSource": {
+      "null": "",
+      "SYSTEM": "SYSTEM",
+      "USER": "USER",
+      "EMAIL": "EMAIL"
+    }
+  }
+}

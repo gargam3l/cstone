@@ -1,0 +1,31 @@
+{
+  "cstoneApp": {
+    "incident": {
+      "home": {
+        "title": "Incidents",
+        "createLabel": "Egy új Incident létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Incidentt",
+        "notFound": "No Incidents found"
+      },
+      "created": "Egy új Incident lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Incident módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Incident törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Incidentt {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Incident"
+      },
+      "status": "Status",
+      "priority": "Priority",
+      "description": "Description",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "closedAt": "Closed At",
+      "incidentWorklog": "Incident Worklog",
+      "group": "Group",
+      "ownerId": "Owner Id",
+      "submittedById": "Submitted By Id"
+    }
+  }
+}

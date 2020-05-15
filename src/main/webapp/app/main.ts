@@ -29,6 +29,12 @@ import ConfigurationService from '@/admin/configuration/configuration.service';
 
 /* tslint:disable */
 
+import IncidentService from '@/entities/incident/incident.service';
+import GroupService from '@/entities/group/group.service';
+import IncidentWorklogService from '@/entities/incident-worklog/incident-worklog.service';
+import EmployeeService from '@/entities/employee/employee.service';
+import PersonService from '@/entities/person/person.service';
+import CustomerService from '@/entities/customer/customer.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -89,6 +95,12 @@ new Vue({
     metricsService: () => new MetricsService(),
     alertService: () => alertService,
     translationService: () => translationService,
+    incidentService: () => new IncidentService(),
+    groupService: () => new GroupService(),
+    incidentWorklogService: () => new IncidentWorklogService(),
+    employeeService: () => new EmployeeService(),
+    personService: () => new PersonService(),
+    customerService: () => new CustomerService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService
   },

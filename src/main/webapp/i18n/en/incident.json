@@ -1,0 +1,31 @@
+{
+  "cstoneApp": {
+    "incident": {
+      "home": {
+        "title": "Incidents",
+        "createLabel": "Create a new Incident",
+        "createOrEditLabel": "Create or edit a Incident",
+        "notFound": "No Incidents found"
+      },
+      "created": "A new Incident is created with identifier {{ param }}",
+      "updated": "A Incident is updated with identifier {{ param }}",
+      "deleted": "A Incident is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Incident {{ id }}?"
+      },
+      "detail": {
+        "title": "Incident"
+      },
+      "status": "Status",
+      "priority": "Priority",
+      "description": "Description",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "closedAt": "Closed At",
+      "incidentWorklog": "Incident Worklog",
+      "group": "Group",
+      "ownerId": "Owner Id",
+      "submittedById": "Submitted By Id"
+    }
+  }
+}

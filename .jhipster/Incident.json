@@ -1,0 +1,83 @@
+{
+    "name": "Incident",
+    "fields": [
+        {
+            "fieldName": "status",
+            "fieldType": "Status",
+            "fieldValues": "NEW,ASSIGNED,IN_PROGRESS,SUSPENDED,CLOSED",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "priority",
+            "fieldType": "Priority",
+            "fieldValues": "CRITICAL,HIGH,MEDIUM,LOW",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdAt",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "updatedAt",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "closedAt",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "incidentWorklog",
+            "otherEntityRelationshipName": "incident",
+            "relationshipName": "incidentWorklog"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "group",
+            "otherEntityRelationshipName": "incident",
+            "relationshipName": "group",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "employee",
+            "otherEntityRelationshipName": "ownedIncidents",
+            "relationshipName": "ownerId",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "employee",
+            "otherEntityRelationshipName": "submittedIncidents",
+            "relationshipName": "submittedById",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200515161000",
+    "entityTableName": "incident",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

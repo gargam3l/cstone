@@ -1,0 +1,26 @@
+{
+  "cstoneApp": {
+    "incidentWorklog": {
+      "home": {
+        "title": "Incident Worklogs",
+        "createLabel": "Create a new Incident Worklog",
+        "createOrEditLabel": "Create or edit a Incident Worklog",
+        "notFound": "No Incident Worklogs found"
+      },
+      "created": "A new Incident Worklog is created with identifier {{ param }}",
+      "updated": "A Incident Worklog is updated with identifier {{ param }}",
+      "deleted": "A Incident Worklog is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Incident Worklog {{ id }}?"
+      },
+      "detail": {
+        "title": "Incident Worklog"
+      },
+      "notes": "Notes",
+      "createdAt": "Created At",
+      "source": "Source",
+      "incident": "Incident",
+      "submittedBy": "Submitted By"
+    }
+  }
+}

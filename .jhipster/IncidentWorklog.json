@@ -1,0 +1,54 @@
+{
+    "name": "IncidentWorklog",
+    "fields": [
+        {
+            "fieldName": "notes",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "createdAt",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "source",
+            "fieldType": "WorklogSource",
+            "fieldValues": "SYSTEM,USER,EMAIL",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "incident",
+            "otherEntityRelationshipName": "incidentWorklog",
+            "relationshipName": "incident",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "person",
+            "otherEntityRelationshipName": "submittedWorklogs",
+            "relationshipName": "submittedBy",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200515161200",
+    "entityTableName": "incident_worklog",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

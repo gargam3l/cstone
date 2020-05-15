@@ -1,0 +1,12 @@
+{
+  "cstoneApp": {
+    "Status": {
+      "null": "",
+      "NEW": "NEW",
+      "ASSIGNED": "ASSIGNED",
+      "IN_PROGRESS": "IN_PROGRESS",
+      "SUSPENDED": "SUSPENDED",
+      "CLOSED": "CLOSED"
+    }
+  }
+}

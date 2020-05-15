@@ -42,6 +42,18 @@ public class CacheConfiguration {
             createCache(cm, com.kchlebo.domain.User.class.getName());
             createCache(cm, com.kchlebo.domain.Authority.class.getName());
             createCache(cm, com.kchlebo.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.kchlebo.domain.Incident.class.getName());
+            createCache(cm, com.kchlebo.domain.Incident.class.getName() + ".incidentWorklogs");
+            createCache(cm, com.kchlebo.domain.Group.class.getName());
+            createCache(cm, com.kchlebo.domain.Group.class.getName() + ".groupPermissions");
+            createCache(cm, com.kchlebo.domain.IncidentWorklog.class.getName());
+            createCache(cm, com.kchlebo.domain.Employee.class.getName());
+            createCache(cm, com.kchlebo.domain.Employee.class.getName() + ".ownedIncidents");
+            createCache(cm, com.kchlebo.domain.Employee.class.getName() + ".submittedIncidents");
+            createCache(cm, com.kchlebo.domain.Employee.class.getName() + ".groups");
+            createCache(cm, com.kchlebo.domain.Person.class.getName());
+            createCache(cm, com.kchlebo.domain.Person.class.getName() + ".submittedWorklogs");
+            createCache(cm, com.kchlebo.domain.Customer.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

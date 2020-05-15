@@ -1,0 +1,26 @@
+{
+  "cstoneApp": {
+    "person": {
+      "home": {
+        "title": "People",
+        "createLabel": "Egy új Person létrehozása",
+        "createOrEditLabel": "Hozzon létre, vagy módosítson Persont",
+        "notFound": "No People found"
+      },
+      "created": "Egy új Person lett létrehozva {{ param }} azonosítóval",
+      "updated": "A Person módosítva lett {{ param }} azonosítóval",
+      "deleted": "A Person törölve lett {{ param }} azonosítóval",
+      "delete": {
+        "question": "Biztos benne, hogy törölni szeretné az Persont {{ id }} azonosítóval?"
+      },
+      "detail": {
+        "title": "Person"
+      },
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "submittedWorklogs": "Submitted Worklogs"
+    }
+  }
+}
